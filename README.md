@@ -12,6 +12,10 @@ It use the twitter REST API, so you need to provide Twitter API Key and Token, s
 
 The python code need Tweepy textblob and elasticsearch
 
-```pip install tweepy
+```
+pip install tweepy
+
 pip install textblob
-pip install elasticsearch```
+
+pip install elasticsearch
+```
