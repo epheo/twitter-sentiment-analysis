@@ -1,7 +1,6 @@
 ## Twitter Sentiment Analysis 
 
-Python script who store in an [ElasticSearch](http://www.elasticsearch.org/) DB all the tweets for one (or more) given Keywords.
-It also make simple semtiment analysis with [textblob](http://textblob.readthedocs.org/en/dev/) (extract Polariry and Subjectivity from tweets)
+Twitter crawler (for on or more given keywords) that performs a simple sentiment analysis with [textblob](http://textblob.readthedocs.org/en/dev/) (extract Polariry and Subjectivity) to determine whether tweets about something/someone are positive or negative and store them in an [ElasticSearch](http://www.elasticsearch.org/) DB.
 
 Once you have enough Tweets in your database you can graph them with [Kibana Dashboard](http://www.elasticsearch.org/overview/kibana/) in order to visualize positives and negatives Tweets in a graph
 
@@ -15,7 +14,7 @@ The python code need Tweepy textblob and elasticsearch
 ```
 pip install tweepy
 
-pip install textblob
+pip install -U textblob && python -m textblob.download_corpora
 
 pip install elasticsearch
 ```
